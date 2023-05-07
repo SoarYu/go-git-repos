@@ -13,10 +13,10 @@ func NewDB(dsn string) error {
 	if err != nil {
 		return err
 	}
-	err = db.AutoMigrate(&UserBasic{}, &RepoBasic{}, &RepoUser{})
-	if err != nil {
-		return err
-	}
 	DB = db
+	//err = db.AutoMigrate(&UserBasic{}, &RepoBasic{}, &RepoUser{}, &RepoStar{})
+	//if err != nil {
+	//	return err
+	//}
 	return nil
 }

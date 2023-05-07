@@ -8,7 +8,7 @@ server:
 data:
   database:
     driver: mysql
-    source: root:root@tcp(127.0.0.1:3306)/test
+    source: root:2021023255@tcp(dog.soar2568.top:3306)/up-git
   redis:
     addr: 127.0.0.1:6379
     read_timeout: 0.2s
